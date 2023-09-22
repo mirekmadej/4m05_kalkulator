@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4m05_kalkulator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Kalkulator prosty"
+                
+                FontSize="32"
+                HorizontalOptions="Center" />           
+
+            <Label
+                Text="0"
+                x:Name="wynikLbl"
+                FontSize="60"
+                HorizontalOptions="End" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition 
+                        Height="60"
+                        />
+                    <RowDefinition 
+                        Height="60"/>
+                    <RowDefinition Height="60"
+                                   />
+                    <RowDefinition Height="60"
+                                   />
+                    <RowDefinition Height="60"
+                                   />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition 
+                        />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Button 
+                    Margin="10"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    x:Name="c1Btn"
+                    Text="1"
+                    Clicked="On1Clicked"
+                    HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="1"
+                    Margin="10"
+                    Grid.Row="3"
+                   x:Name="c2Btn"
+                   Text="2"
+                   Clicked="On2Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="3"
+                    Margin="10"
+                   x:Name="c3Btn"
+                   Text="3"
+                   Clicked="On3Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="2"
+                   x:Name="c4Btn"
+                   Text="4"
+                    Margin="10"
+                   Clicked="On4Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="2"
+                   x:Name="c5Btn"
+                   Text="5"
+                    Margin="10"
+                   Clicked="On5Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    Margin="10"
+                   x:Name="c6Btn"
+                   Text="6"
+                   Clicked="On6Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="1"
+                   x:Name="c7Btn"
+                    Margin="10"
+                   Text="7"
+                   Clicked="On7Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Margin="10"
+                   x:Name="c8Btn"
+                   Text="8"
+                   Clicked="On8Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="1"
+                   x:Name="c9Btn"
+                    Margin="10"
+                   Text="9"
+                   Clicked="On9Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="1"
+                    Grid.Row="4"
+                    Margin="10"
+                   x:Name="c0Btn"
+                   Text="0"
+                   Clicked="On0Clicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    Margin="10"
+                   x:Name="cPMBtn"
+                   Text="+/-"
+                   Clicked="OnPMClicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="4"
+                    Margin="10"
+                   x:Name="cPrzecBtn"
+                   Text=","
+                   Clicked="OnPrzecClicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="3"
+                    Grid.Row="4"
+                    Margin="10"
+                   x:Name="cEnterBtn"
+                   Text="="
+                   Clicked="OnEnterClicked"
+                   BackgroundColor="Blue"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    Margin="10"
+                   x:Name="cResetBtn"
+                   Text="C"
+                   Clicked="OnResetClicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="3"
+                    Grid.Row="3"
+                    Margin="10"
+                   x:Name="cPlusBtn"
+                   Text="+"
+                   Clicked="OnPlusClicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="3"
+                    Grid.Row="2"
+                   x:Name="cMinusBtn"
+                    Margin="10"
+                   Text="-"
+                   Clicked="OnMinusClicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="3"
+                    Grid.Row="1"
+                    Margin="10"
+                   x:Name="cRazyBtn"
+                   Text="*"
+                   Clicked="OnRazyClicked"
+                   HorizontalOptions="Center" />
+                <Button
+                    Grid.Column="3"
+                    Grid.Row="0"
+                    Margin="10"
+                   x:Name="cDzielBtn"
+                   Text="/"
+                   Clicked="OnDzielClicked"
+                   HorizontalOptions="Center" />
+
+
+            </Grid>
+
+ 
+ 
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
